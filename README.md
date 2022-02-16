@@ -11,6 +11,7 @@ DentaLife es una aplicación destinada a la administración sencilla de una clin
 Dispositivo celular con acceso a internet
 Sistema Operativo Android *Ingrese versión*
 ```
+
 ## Desarrolladores (G-02T) :busts_in_silhouette:
 * **Erick Fabricio Arevalo Henriquez** - [MegaZeroxs :octocat:](https://github.com/MegaZeroxs)
 * **Edgard Alexander Barrera Flamenco** - [Alexander1015 :octocat:](https://github.com/Alexander1015)
@@ -23,6 +24,7 @@ Sistema Operativo Android *Ingrese versión*
 * [Firebase](https://firebase.google.com/?hl=es) - Herramienta que permitira manipular la base de datos desarrollado por Google.
 
 ## Licencia :closed_lock_with_key:
+```
 *Ingrese la licencia*
 
 **Usted es libre de:**
@@ -34,6 +36,7 @@ Sistema Operativo Android *Ingrese versión*
 * **ABC** - ...
 
 Mira el archivo [LICENSE]() para mas detalles :scroll:
+```
 
 ## Enlaces de interés :mag_right:
 * Trello: [Tablero :bookmark:](https://trello.com/b/vXwkF00o/moviles)
