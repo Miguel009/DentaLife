@@ -12,11 +12,11 @@ Dispositivo celular con acceso a internet
 Sistema Operativo Android *Ingrese versión*
 ```
 ## Desarrolladores (G-02T) :busts_in_silhouette:
-* **Erick Fabricio Arevalo Henriquez** - :octocat: []()
-* **Edgard Alexander Barrera Flamenco** - :octocat: [Alexander1015](https://github.com/Alexander1015)
-* **Ricardo Vladimir Crespín Bran** - :octocat: []()
-* **Miguel Ángel Flores Reyes** - :octocat: [Miguel009](https://github.com/Miguel009)
-* **Miguel Alejandro Meléndez Martínez** - :octocat: [Alejandro9917](https://github.com/Alejandro9917)
+* **Erick Fabricio Arevalo Henriquez** - [ :octocat:]()
+* **Edgard Alexander Barrera Flamenco** - [Alexander1015 :octocat:](https://github.com/Alexander1015)
+* **Ricardo Vladimir Crespín Bran** - [ :octocat:]()
+* **Miguel Ángel Flores Reyes** - [Miguel009 :octocat:](https://github.com/Miguel009)
+* **Miguel Alejandro Meléndez Martínez** - [Alejandro9917 :octocat:](https://github.com/Alejandro9917)
 
 ## Herramientas utilizadas :hammer:
 * [Android Studio](https://developer.android.com/) - Entorno de desarrollo integrado oficial para la plataforma Android.
@@ -36,5 +36,5 @@ Sistema Operativo Android *Ingrese versión*
 Mira el archivo [LICENSE]() para mas detalles :scroll:
 
 ## Enlaces de interés :mag_right:
-* Trello: [Tablero](https://trello.com/b/vXwkF00o/moviles) :bookmark:
-* Mock Ups: [*Donde se suba*]() :books:
+* Trello: [Tablero :bookmark:](https://trello.com/b/vXwkF00o/moviles)
+* Mock Ups: [*Donde se suba* :books:]()
