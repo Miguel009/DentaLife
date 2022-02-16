@@ -18,11 +18,11 @@ Sistema Operativo Android *Ingrese versión*
 * **Miguel Ángel Flores Reyes** - :octocat: [Miguel009](https://github.com/Miguel009)
 * **Miguel Alejandro Meléndez Martínez** - :octocat: [Alejandro9917](https://github.com/Alejandro9917)
 
-## Herramientas utilizadas :computer: :hammer:
+## Herramientas utilizadas :hammer:
 * [Android Studio](https://developer.android.com/) - Entorno de desarrollo integrado oficial para la plataforma Android.
 * [Firebase](https://firebase.google.com/?hl=es) - Herramienta que permitira manipular la base de datos desarrollado por Google.
 
-## Licencia :page_with_curl: :closed_lock_with_key:
+## Licencia :closed_lock_with_key:
 *Ingrese la licencia*
 
 **Usted es libre de:**
@@ -35,6 +35,6 @@ Sistema Operativo Android *Ingrese versión*
 
 Mira el archivo [LICENSE]() para mas detalles :scroll:
 
-## Enlaces de interés :dvd: :mag_right:
+## Enlaces de interés :mag_right:
 * Trello: [Tablero](https://trello.com/b/vXwkF00o/moviles) :bookmark:
 * Mock Ups: [*Donde se suba*]() :books:
