@@ -1,5 +1,5 @@
 # DentaLife :earth_americas: :iphone: :hospital: :pill:
-DentaLife es una aplicación destinada a la administración sencilla de una clinica dental con el objetivo de poder llevar control de las citas realizadas, los pacientes recibidos y que exista una mayor comunicación entre especialista y paciente, puediendo ahorrar tiempo al momento generar horarios o el repaso de citas anteriores.
+DentaLife es una aplicación destinada a la administración sencilla de una clínica dental con el objetivo de poder llevar control de las citas realizadas, los pacientes recibidos y que exista una mayor comunicación entre especialista y paciente, pudiendo ahorrar tiempo al momento generar horarios o el repaso de citas anteriores.
 
 ## Para comenzar :milky_way:
 * [Manual de Usuario :boy:]()
