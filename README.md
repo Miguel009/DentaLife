@@ -40,4 +40,4 @@ Mira el archivo [LICENSE]() para mas detalles :scroll:
 
 ## Enlaces de interés :mag_right:
 * Trello: [Tablero :bookmark:](https://trello.com/b/vXwkF00o/moviles)
-* Mock Ups: [*Donde se suba* :books:]()
+* Mock Ups: [Google Drive :books:](https://drive.google.com/file/d/1s6jMEE_X3fX0Sqk5lpn6Qs7sB1OR-C8s/view?fbclid=IwAR2rRPdVRu1xivALsAkUJPFi7RHMG8sU4TT7NaWviVnDpYmgYec20iyYzP4)
