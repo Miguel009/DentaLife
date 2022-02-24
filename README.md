@@ -22,7 +22,7 @@ Sistema Operativo Android *Ingrese versión*
 ## Herramientas utilizadas :hammer:
 * [Android Studio](https://developer.android.com/) - Entorno de desarrollo integrado oficial para la plataforma Android.
 * [Firebase](https://firebase.google.com/?hl=es) - Herramienta que permitira manipular la base de datos desarrollado por Google.
-* ...-...
+* [Adobe Photoshop](https://www.adobe.com/la/products/photoshop.html) - Herramienta de edición de imágenes y fotografía.
 
 ## Licencia :closed_lock_with_key:
 
