@@ -4,7 +4,7 @@ DentaLife es una aplicación destinada a la administración sencilla de una clí
 ## Para comenzar :milky_way:
 * [Manual de Usuario :boy:]()
 * [Manual Técnico :construction_worker:]()
-* [Documento - Primera Fase :bookmark_tabs:]()
+* [Documento - Primera Fase :bookmark_tabs:](https://drive.google.com/file/d/1AN1iKLEkOhxEBdNTI-JnuVWxcM-3qo8_/view?usp=sharing)
 
 ## Requisitos :eyes:
 ```
