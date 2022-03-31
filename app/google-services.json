@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664663036781",
+    "project_id": "dentalife-30d75",
+    "storage_bucket": "dentalife-30d75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664663036781:android:99a835ee5215d3ad988064",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.dentalife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664663036781-eoln68igi3ubavnj7jcaphvturfrtb1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSa0LbadnV4k4K5-PbkUE2u0XdY3NO6O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664663036781-eoln68igi3ubavnj7jcaphvturfrtb1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

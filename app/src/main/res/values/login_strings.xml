@@ -1,0 +1,8 @@
+<resources>
+    <string name="main_title">Iniciar Sesión</string>
+    <string name="email_hint">Correo</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button_text">Iniciar Sesion</string>
+    <string name="signup_button_text">Registrate!</string>
+    <string name="google_button_text">Inicia Sesion con Google!</string>
+</resources>
