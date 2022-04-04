@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="specialities_main_title">Ingreso de Especialidades</string>
+    <string name="save_spec_button_text">Guardar</string>
+    <string name="cancel_spec_button_text">Cancelar</string>
+
+    <string name="spec_name_hint">Especialidad</string>
+</resources>

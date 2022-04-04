@@ -6,12 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.View;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import sv.edu.udb.dentalife.databinding.ActivityDashboardBinding;
-import sv.edu.udb.dentalife.databinding.ActivityMainBinding;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -31,8 +27,11 @@ public class Dashboard extends AppCompatActivity {
                 case R.id.location:
                     replaceFragment(new Location());
                     break;
-                case R.id.doctors:
-                    replaceFragment(new Doctors());
+                case R.id.dentist:
+                    replaceFragment(new Dentists());
+                    break;
+                case R.id.specialty:
+                    replaceFragment(new Specialties());
                     break;
                 case R.id.contactUs:
                     replaceFragment(new ContactUs());

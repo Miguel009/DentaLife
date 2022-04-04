@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Specialties">
+
+    <TextView
+        android:id="@+id/specialty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/specialities_main_title"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/spec_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specialty"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_tooth"
+        android:drawablePadding="20dp"
+        android:hint="@string/spec_name_hint"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/specialties_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spec_name"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/save_dent_button_text"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/specialties_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specialties_save_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/cancel_dent_button_text"
+        android:textColor="@color/purple_700"
+        app:cornerRadius="5dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/purple_700"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/specialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>

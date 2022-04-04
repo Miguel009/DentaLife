@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dentist_main_title">Ingreso de Dentistas</string>
+    <string name="save_dent_button_text">Guardar</string>
+    <string name="cancel_dent_button_text">Cancelar</string>
+
+    <string name="dent_name_hint">Nombre Completo</string>
+    <string name="dent_specialty_hint">Especialidad</string>
+    <string name="dent_user_hint">Usuario</string>
+    <string name="dent_img_hint">Imagen</string>
+    <string name="dent_password_hint">Contraseña</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Dentists">
+
+    <TextView
+        android:id="@+id/dentist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/dentist_main_title"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dent_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dentist"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_account_edit"
+        android:drawablePadding="20dp"
+        android:hint="@string/dent_name_hint"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dent_specialty"
+        android:background="#30ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/dent_name"
+        android:hint="@string/dent_specialty_hint"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_tooth"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dent_user"
+        android:background="#30ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/dent_specialty"
+        android:hint="@string/dent_user_hint"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_person_pin"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dent_img"
+        android:background="#30ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/dent_user"
+        android:hint="@string/dent_img_hint"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_file_image"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dent_password"
+        android:background="#30ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/dent_img"
+        android:hint="@string/dent_password_hint"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dentists_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dent_password"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/save_dent_button_text"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dentists_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dentists_save_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/cancel_dent_button_text"
+        android:textColor="@color/purple_700"
+        app:cornerRadius="5dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/purple_700"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/dentist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>
