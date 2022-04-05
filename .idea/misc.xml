@@ -13,10 +13,28 @@
         <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/fragment_doctors.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.19791666666666666" />
+<<<<<<< HEAD
         <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/fragment_dentist.xml" value="0.1" />
         <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/fragment_dentists.xml" value="0.1" />
         <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/view_dentist.xml" value="0.1" />
         <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+=======
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_account_edit.xml" value="0.201" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_doctor.xml" value="0.201" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_file_image.xml" value="0.201" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_tooth.xml" value="0.201" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_register.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_contact_us.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_dentists.xml" value="0.19375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_doctors.xml" value="0.25" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_location.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_speciality.xml" value="0.209375" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_specialties.xml" value="0.25" />
+        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.209375" />
+>>>>>>> 57765c51f5b0ac2c0085325e0b80c2e0a9c3c6b9
       </map>
     </option>
   </component>
