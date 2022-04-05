@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dentist_main_title">Dentistas disponibles</string>
+    <string name="dent_name_hint">Nombre Completo</string>
+    <string name="dent_specialty_hint">Especialidad</string>
+</resources>

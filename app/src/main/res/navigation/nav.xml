@@ -16,8 +16,8 @@
         android:label="fragment_location"
         tools:layout="@layout/fragment_location" />
     <fragment
-        android:id="@+id/doctors"
-        android:name="sv.edu.udb.dentalife.Doctors"
-        android:label="fragment_doctors"
-        tools:layout="@layout/fragment_doctors" />
+        android:id="@+id/dentist"
+        android:name="sv.edu.udb.dentalife.Dentist"
+        android:label="fragment_dentist"
+        tools:layout="@layout/fragment_dentist" />
 </navigation>
