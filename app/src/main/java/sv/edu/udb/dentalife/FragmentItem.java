@@ -53,6 +53,11 @@ public class FragmentItem extends Fragment implements AdapterView.OnItemClickLis
                 Intent aboutUs = new Intent(getActivity(), AboutUs.class);
                 startActivity(aboutUs);
                 break;
+            case 2:
+                // Contacto
+                Intent contact = new Intent(getActivity(), Contact.class);
+                startActivity(contact);
+                break;
         }
     }
 }
