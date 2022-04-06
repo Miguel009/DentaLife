@@ -3,10 +3,13 @@ package sv.edu.udb.dentalife.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -36,6 +39,11 @@ public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHo
         //Aqui agregamos nuevps campos
         holder.tvName.setText(dentists.getName());
         holder.tvSpecialty.setText(dentists.getId_specialty());
+        //Para cargar las imagenes desde url
+        Picasso.get()
+                .load(dentists.getImg()) //Cargamos recurso
+                .error(R.mipmap.ic_launcher_round) //Si da error mostramos otra imagen
+                .into(holder.vImg); //En donde mostraremos la img
     }
 
     @Override
@@ -49,6 +57,8 @@ public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHo
 
         private TextView tvName, tvSpecialty;
 
+        private ImageView vImg;
+
         public View view;
 
         public ViewHolder(View view) {
@@ -56,6 +66,7 @@ public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHo
             this.view = view;
             this.tvName = (TextView) view.findViewById(R.id.dent_name);
             this.tvSpecialty = (TextView) view.findViewById(R.id.dent_specialty);
+            this.vImg = (ImageView) view.findViewById(R.id.dent_img);
         }
 
     }
