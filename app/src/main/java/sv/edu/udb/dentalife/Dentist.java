@@ -1,12 +1,16 @@
 package sv.edu.udb.dentalife;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,12 +27,14 @@ import com.google.firebase.database.Logger;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import sv.edu.udb.dentalife.adapters.Dentist_Adapter;
+import sv.edu.udb.dentalife.databinding.FragmentAppointmentBinding;
 import sv.edu.udb.dentalife.models.Dentist_Model;
 import sv.edu.udb.dentalife.models.Specialty_Model;
 
-public class Dentist extends Fragment {
+public class Dentist extends Fragment implements Dentist_Adapter.OnDentistListener {
 
     private ProgressBar progressBar;
 
@@ -88,7 +94,7 @@ public class Dentist extends Fragment {
                                     }
                                     dentistList.add(new Dentist_Model(id, name, specialty, img));
                                 }
-                                dentAdapter = new Dentist_Adapter(dentistList, R.layout.view_dentist);
+                                dentAdapter = new Dentist_Adapter(dentistList, R.layout.view_dentist, Dentist.this);
                                 recyvlerView.setAdapter(dentAdapter);
                                 progressBar.setVisibility(View.GONE);
                             }
@@ -112,5 +118,18 @@ public class Dentist extends Fragment {
     private void initializeUI(View view) {
         progressBar = view.findViewById(R.id.progressBar);
         recyvlerView = view.findViewById(R.id.item_dentist);
+    }
+
+    @Override
+    public void onDentistClick(int position) {
+        Bundle bundle = new Bundle();
+        bundle.putString("dentist_id", dentistList.get(position).getId());
+        bundle.putString("dentist_name", dentistList.get(position).getName());
+        bundle.putString("dentist_speciality", dentistList.get(position).getId_specialty());
+        bundle.putString("dentist_image", dentistList.get(position).getImg());
+        Fragment ap = new appointment();
+        ap.setArguments(bundle);
+        FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+        fr.replace(R.id.fragment, ap).commit();
     }
 }

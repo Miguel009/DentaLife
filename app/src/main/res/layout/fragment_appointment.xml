@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointment">
+
+    <TextView
+        android:id="@+id/dentist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/dent_name_hint"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dentist_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dentist_name"
+        android:paddingLeft="100dp"
+        android:paddingRight="10dp"
+        android:text="@string/dent_specialty_hint"
+        android:textColor="@color/purple_700" />
+
+    <ImageView
+        android:id="@+id/dentist_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY" />
+
+    <Spinner
+        android:id="@+id/spinner_dates"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_margin="30dp"
+        android:layout_below="@id/dentist_speciality"
+        />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/spinner_dates"
+        android:layout_marginLeft="10dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/appointment_details"
+        android:gravity="top"
+        android:inputType="text|textMultiLine" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ask_for_appointment" />
+</RelativeLayout>

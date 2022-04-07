@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
-    android:background="@color/white" >
+    android:background="@color/white"
+    android:clickable="true">
 
     <TextView
         android:id="@+id/dent_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp"
         android:paddingLeft="100dp"
+        android:paddingTop="10dp"
         android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/dent_name_hint"
         android:textColor="@color/purple_700"
-        android:textStyle="bold"
         android:textSize="18dp"
-        android:text="@string/dent_name_hint"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/dent_specialty"
