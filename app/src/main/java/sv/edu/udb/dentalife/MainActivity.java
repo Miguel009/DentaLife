@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent login = new Intent(MainActivity.this, Dashboard.class);
+                Intent login = new Intent(MainActivity.this, Login.class);
                 startActivity(login);
                 finish();
             }
-        }, 50);
+        }, 5000);
     }
 }

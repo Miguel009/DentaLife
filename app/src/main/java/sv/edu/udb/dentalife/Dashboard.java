@@ -35,7 +35,7 @@ public class Dashboard extends AppCompatActivity {
             switch (item.getItemId())
             {
                 case R.id.doctors:
-                    replaceFragment(new Doctors());
+                    replaceFragment(new Dentist());
                     break;
                 case R.id.history:
                     replaceFragment(new History());
