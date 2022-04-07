@@ -3,38 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/drawable/nav.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/activity_register.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/layout/fragment_doctors.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/GBC/Documentos/Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.19791666666666666" />
-<<<<<<< HEAD
-        <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/fragment_dentist.xml" value="0.1" />
-        <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/fragment_dentists.xml" value="0.1" />
-        <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/layout/view_dentist.xml" value="0.1" />
-        <entry key="..\:/chito/Alexito/(DSM104) Desarrollo de Software para Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
-=======
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_account_edit.xml" value="0.201" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_doctor.xml" value="0.201" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_file_image.xml" value="0.201" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/drawable/ic_tooth.xml" value="0.201" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_main.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/activity_register.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_contact_us.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_dentists.xml" value="0.19375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_doctors.xml" value="0.25" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_location.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_speciality.xml" value="0.209375" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/layout/fragment_specialties.xml" value="0.25" />
-        <entry key="..\:/chito/Alexito/Lab-Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.209375" />
->>>>>>> 57765c51f5b0ac2c0085325e0b80c2e0a9c3c6b9
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/button_principal.xml" value="0.33" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/gradient_violet_principal.xml" value="0.2985" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.273" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.273" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.273" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/textlines.xml" value="0.2985" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/activity_about_us.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/activity_contact.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/activity_profile.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_blank.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_contact_us.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_doctors.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_item.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_location.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/fragment_profile.xml" value="0.317481884057971" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/layout/profile_user_fragment.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.3625" />
       </map>
     </option>
   </component>
