@@ -74,4 +74,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapViewContact"
+        android:layout_width="362dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionSection1"
+        app:layout_constraintVertical_bias="0.326" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
