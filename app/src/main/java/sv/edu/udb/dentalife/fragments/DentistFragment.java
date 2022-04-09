@@ -1,4 +1,4 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.fragments;
 
 import android.os.Bundle;
 
@@ -22,20 +22,21 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import sv.edu.udb.dentalife.adapters.Dentist_Adapter;
-import sv.edu.udb.dentalife.models.Dentist_Model;
-import sv.edu.udb.dentalife.models.Specialty_Model;
+import sv.edu.udb.dentalife.R;
+import sv.edu.udb.dentalife.adapters.DentistAdapter;
+import sv.edu.udb.dentalife.models.DentistModel;
+import sv.edu.udb.dentalife.models.SpecialtyModel;
 
-public class Dentist extends Fragment implements Dentist_Adapter.OnDentistListener {
+public class DentistFragment extends Fragment implements DentistAdapter.OnDentistListener {
 
-    private ProgressBar progressBar;
+    private ProgressBar dentist_progress_bar;
 
-    private DatabaseReference dataRef;
+    private DatabaseReference database_reference;
 
-    private Dentist_Adapter dentAdapter;
-    private RecyclerView recyvlerView;
-    private ArrayList<Dentist_Model> dentistList = new ArrayList<>();
-    private ArrayList<Specialty_Model> specialtyList = new ArrayList<>();
+    private DentistAdapter dentist_adapter;
+    private RecyclerView recyvler_view;
+    private ArrayList<DentistModel> dentist_list = new ArrayList<>();
+    private ArrayList<SpecialtyModel> specialty_list = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,48 +48,48 @@ public class Dentist extends Fragment implements Dentist_Adapter.OnDentistListen
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dentist, container, false);
         initializeUI(view);
-        recyvlerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        dataRef = FirebaseDatabase.getInstance().getReference();
+        recyvler_view.setLayoutManager(new LinearLayoutManager(getContext()));
+        database_reference = FirebaseDatabase.getInstance().getReference();
         //Obtenemos todos los datos
         getDentistsFromFirebase();
         return view;
     }
 
     private void getDentistsFromFirebase() {
-        progressBar.setVisibility(View.VISIBLE);
-        dataRef.child("specialty").addValueEventListener(new ValueEventListener() {
+        dentist_progress_bar.setVisibility(View.VISIBLE);
+        database_reference.child("specialty").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot specialtySnapshot) {
                 if (specialtySnapshot.exists()) {
-                    specialtyList.clear();
+                    specialty_list.clear();
                     //Obtenemos las especialidades
                     for (DataSnapshot ss: specialtySnapshot.getChildren()) {
                         String id = ss.getKey();
                         String name = ss.child("name").getValue().toString();
-                        specialtyList.add(new Specialty_Model(id, name));
+                        specialty_list.add(new SpecialtyModel(id, name));
                     }
-                    dataRef.child("dentist").addValueEventListener(new ValueEventListener() {
+                    database_reference.child("dentist").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dentistSnapshot) {
                             if (dentistSnapshot.exists()) {
-                                dentistList.clear();
+                                dentist_list.clear();
                                 for (DataSnapshot ds : dentistSnapshot.getChildren()) {
                                     String id = ds.getKey();
                                     String name = "Dmd. " + ds.child("name").getValue().toString();
                                     String id_specialty = ds.child("id_specialty").getValue().toString().trim();
                                     String img = ds.child("img").getValue().toString();
                                     String specialty = "";
-                                    for (int i = 0; i < specialtyList.size(); i++) {
-                                        Specialty_Model specialties = specialtyList.get(i);
+                                    for (int i = 0; i < specialty_list.size(); i++) {
+                                        SpecialtyModel specialties = specialty_list.get(i);
                                         if (specialties.getId().trim().equals(id_specialty)) {
                                             specialty = specialties.getName();
                                         }
                                     }
-                                    dentistList.add(new Dentist_Model(id, name, specialty, img));
+                                    dentist_list.add(new DentistModel(id, name, specialty, img));
                                 }
-                                dentAdapter = new Dentist_Adapter(dentistList, R.layout.view_dentist, Dentist.this);
-                                recyvlerView.setAdapter(dentAdapter);
-                                progressBar.setVisibility(View.GONE);
+                                dentist_adapter = new DentistAdapter(dentist_list, R.layout.view_dentist, DentistFragment.this);
+                                recyvler_view.setAdapter(dentist_adapter);
+                                dentist_progress_bar.setVisibility(View.GONE);
                             }
                         }
 
@@ -108,18 +109,18 @@ public class Dentist extends Fragment implements Dentist_Adapter.OnDentistListen
     }
 
     private void initializeUI(View view) {
-        progressBar = view.findViewById(R.id.progressBar);
-        recyvlerView = view.findViewById(R.id.item_dentist);
+        dentist_progress_bar = view.findViewById(R.id.dentist_progress_bar);
+        recyvler_view = view.findViewById(R.id.item_dentist);
     }
 
     @Override
     public void onDentistClick(int position) {
         Bundle bundle = new Bundle();
-        bundle.putString("dentist_id", dentistList.get(position).getId());
-        bundle.putString("dentist_name", dentistList.get(position).getName());
-        bundle.putString("dentist_speciality", dentistList.get(position).getId_specialty());
-        bundle.putString("dentist_image", dentistList.get(position).getImg());
-        Fragment ap = new Appointment();
+        bundle.putString("dentist_id", dentist_list.get(position).getId());
+        bundle.putString("dentist_name", dentist_list.get(position).getName());
+        bundle.putString("dentist_speciality", dentist_list.get(position).getId_specialty());
+        bundle.putString("dentist_image", dentist_list.get(position).getImg());
+        Fragment ap = new NewAppointmentFragment();
         ap.setArguments(bundle);
         FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
         fr.replace(R.id.fragment, ap).commit();

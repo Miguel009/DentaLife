@@ -1,15 +1,15 @@
 package sv.edu.udb.dentalife.models;
 
-public class Appointment_Model {
+public class AppointmentModel {
     private String id;
     private String day;
     private String hour;
     private String comment;
     private String doctor_id;
 
-    public Appointment_Model() {}
+    public AppointmentModel() {}
 
-    public Appointment_Model(String id,String day, String hour, String comment, String doctor_id) {
+    public AppointmentModel(String id, String day, String hour, String comment, String doctor_id) {
         this.id = id;
         this.day = day;
         this.hour = hour;

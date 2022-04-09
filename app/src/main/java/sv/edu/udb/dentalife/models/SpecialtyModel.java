@@ -1,12 +1,12 @@
 package sv.edu.udb.dentalife.models;
 
-public class Specialty_Model {
+public class SpecialtyModel {
     private String id;
     private String name;
 
-    public Specialty_Model() {}
+    public SpecialtyModel() {}
 
-    public Specialty_Model(String id, String name) {
+    public SpecialtyModel(String id, String name) {
         this.id = id;
         this.name = name;
     }

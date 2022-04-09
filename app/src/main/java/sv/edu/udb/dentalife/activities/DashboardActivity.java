@@ -1,26 +1,20 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import sv.edu.udb.dentalife.R;
 import sv.edu.udb.dentalife.databinding.ActivityDashboardBinding;
+import sv.edu.udb.dentalife.fragments.DentistFragment;
+import sv.edu.udb.dentalife.fragments.ItemFragment;
+import sv.edu.udb.dentalife.fragments.MessagesFragment;
+import sv.edu.udb.dentalife.fragments.MyAppointmentsFragment;
 
-public class Dashboard extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     ActivityDashboardBinding binding;
 
@@ -30,21 +24,21 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         binding = ActivityDashboardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new MyAppointments());
+        replaceFragment(new MyAppointmentsFragment());
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId())
             {
-                case R.id.doctors:
-                    replaceFragment(new MyAppointments());
-                    break;
                 case R.id.history:
-                    replaceFragment(new History());
+                    replaceFragment(new MyAppointmentsFragment());
+                    break;
+                case R.id.dentists:
+                    replaceFragment(new DentistFragment());
                     break;
                 case R.id.messages:
-                    replaceFragment(new Messages());
+                    replaceFragment(new MessagesFragment());
                     break;
                 case R.id.profile:
-                    replaceFragment(new FragmentItem());
+                    replaceFragment(new ItemFragment());
                     break;
             }
             return true;

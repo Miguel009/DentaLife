@@ -1,4 +1,4 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,10 +15,13 @@ import androidx.fragment.app.Fragment;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.lang.reflect.Array;
-import java.util.List;
+import sv.edu.udb.dentalife.activities.AboutUsActivity;
+import sv.edu.udb.dentalife.activities.ContactActivity;
+import sv.edu.udb.dentalife.activities.LoginActivity;
+import sv.edu.udb.dentalife.activities.ProfileActivity;
+import sv.edu.udb.dentalife.R;
 
-public class FragmentItem extends Fragment implements AdapterView.OnItemClickListener {
+public class ItemFragment extends Fragment implements AdapterView.OnItemClickListener {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -30,16 +32,11 @@ public class FragmentItem extends Fragment implements AdapterView.OnItemClickLis
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        String[] options_menu = {
-                "Configurar perfil",
-                "Acerca de DentaLife",
-                "Contactar con DentaLife",
-                "Cerrar sesión"
-        };
-        ListView listView = (ListView)view.findViewById(R.id.listOptions);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, options_menu);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(this);
+
+        ListView list_view = (ListView)view.findViewById(R.id.list_options);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.menu_options));
+        list_view.setAdapter(adapter);
+        list_view.setOnItemClickListener(this);
     }
 
     @Override
@@ -52,18 +49,18 @@ public class FragmentItem extends Fragment implements AdapterView.OnItemClickLis
                 break;
             case 1:
                 // Acerca de nosotros
-                Intent aboutUs = new Intent(getActivity(), AboutUs.class);
-                startActivity(aboutUs);
+                Intent about_us = new Intent(getActivity(), AboutUsActivity.class);
+                startActivity(about_us);
                 break;
             case 2:
                 // Contacto
-                Intent contact = new Intent(getActivity(), Contact.class);
+                Intent contact = new Intent(getActivity(), ContactActivity.class);
                 startActivity(contact);
                 break;
             case 3:
-                FirebaseAuth fAuth = FirebaseAuth.getInstance();
-                fAuth.signOut();
-                startActivity(new Intent(getActivity(), Login.class));
+                FirebaseAuth firebase_auth = FirebaseAuth.getInstance();
+                firebase_auth.signOut();
+                startActivity(new Intent(getActivity(), LoginActivity.class));
                 break;
         }
     }

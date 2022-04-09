@@ -1,4 +1,4 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.fragments;
 
 import android.os.Bundle;
 
@@ -24,20 +24,20 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import sv.edu.udb.dentalife.adapters.Appointment_Adapter;
-import sv.edu.udb.dentalife.adapters.Dentist_Adapter;
-import sv.edu.udb.dentalife.models.Appointment_Model;
+import sv.edu.udb.dentalife.R;
+import sv.edu.udb.dentalife.adapters.AppointmentAdapter;
+import sv.edu.udb.dentalife.models.AppointmentModel;
 
 
-public class MyAppointments extends Fragment implements Appointment_Adapter.OnAppointmentListener{
+public class MyAppointmentsFragment extends Fragment implements AppointmentAdapter.OnAppointmentListener{
 
-    private ProgressBar progressBar;
+    private ProgressBar my_appointments_progress_bar;
+    FloatingActionButton fab_add;
+    private DatabaseReference database_reference;
 
-    private DatabaseReference dataRef;
-
-    private Appointment_Adapter appointmentAdapter;
-    private RecyclerView recyvlerView;
-    private ArrayList<Appointment_Model> appointmentList = new ArrayList<>();
+    private AppointmentAdapter appointment_adapter;
+    private RecyclerView recyvler_view;
+    private ArrayList<AppointmentModel> appointment_list = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
@@ -47,34 +47,35 @@ public class MyAppointments extends Fragment implements Appointment_Adapter.OnAp
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_my_appointments, container, false);
         initializeUI(view);
-        recyvlerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        dataRef = FirebaseDatabase.getInstance().getReference();
+        recyvler_view.setLayoutManager(new LinearLayoutManager(getContext()));
+        database_reference = FirebaseDatabase.getInstance().getReference();
         getAppointmentsFromFirebase();
+        fab_add.setOnClickListener(v -> goToDentistFragment());
         return view;
     }
 
     private void getAppointmentsFromFirebase() {
-        FirebaseAuth fAuth = FirebaseAuth.getInstance();
+        FirebaseAuth firebase_auth = FirebaseAuth.getInstance();
 
-        progressBar.setVisibility(View.VISIBLE);
-        dataRef.child("appointments/"+fAuth.getCurrentUser().getUid()).addValueEventListener(
+        my_appointments_progress_bar.setVisibility(View.VISIBLE);
+        database_reference.child("appointments/"+firebase_auth.getCurrentUser().getUid()).addValueEventListener(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot AppointmentSnapshot) {
                         if (AppointmentSnapshot.exists()) {
-                            appointmentList.clear();
+                            appointment_list.clear();
                             for (DataSnapshot ds : AppointmentSnapshot.getChildren()) {
                                 String id = ds.getKey();
                                 String comment = ds.child("comment").getValue().toString();
                                 String day = ds.child("day").getValue().toString();
                                 String hour = ds.child("hour").getValue().toString();
                                 String doctor_id = ds.child("dentist_id").getValue().toString();
-                                appointmentList.add(new Appointment_Model(id, day, hour, comment, doctor_id));
+                                appointment_list.add(new AppointmentModel(id, day, hour, comment, doctor_id));
                             }
-                            appointmentAdapter = new Appointment_Adapter(appointmentList, R.layout.view_appointments, MyAppointments.this);
-                            recyvlerView.setAdapter(appointmentAdapter);
-                            progressBar.setVisibility(View.GONE);
+                            appointment_adapter = new AppointmentAdapter(appointment_list, R.layout.view_appointments, MyAppointmentsFragment.this);
+                            recyvler_view.setAdapter(appointment_adapter);
                         }
+                        my_appointments_progress_bar.setVisibility(View.GONE);
                     }
 
                     @Override
@@ -86,20 +87,16 @@ public class MyAppointments extends Fragment implements Appointment_Adapter.OnAp
     }
 
     private void initializeUI(View view) {
-        progressBar = view.findViewById(R.id.progressBar);
-        recyvlerView = view.findViewById(R.id.item_appointments);
-        FloatingActionButton fab_agregar= view.findViewById(R.id.fab_agregar);
+        my_appointments_progress_bar = view.findViewById(R.id.my_appointments_progress_bar);
+        recyvler_view = view.findViewById(R.id.item_appointments);
+        fab_add= view.findViewById(R.id.fab_add);
+    }
 
-        fab_agregar.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Fragment ap = new Dentist();
-                        FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
-                        fr.replace(R.id.fragment, ap).commit();
-                    }
-                }
-        );
+    private void goToDentistFragment()
+    {
+        Fragment ap = new DentistFragment();
+        FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
+        fr.replace(R.id.fragment, ap).commit();
     }
 
     @Override

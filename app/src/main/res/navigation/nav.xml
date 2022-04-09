@@ -6,28 +6,18 @@
     app:startDestination="@id/myAppointments">
 
     <fragment
-        android:id="@+id/contactUs"
-        android:name="sv.edu.udb.dentalife.ContactUs"
-        android:label="fragment_contact_us"
-        tools:layout="@layout/fragment_contact_us" />
-    <fragment
-        android:id="@+id/location"
-        android:name="sv.edu.udb.dentalife.Location"
-        android:label="fragment_location"
-        tools:layout="@layout/fragment_location" />
-    <fragment
         android:id="@+id/dentist"
-        android:name="sv.edu.udb.dentalife.Dentist"
+        android:name="sv.edu.udb.dentalife.fragments.DentistFragment"
         android:label="fragment_dentist"
         tools:layout="@layout/fragment_dentist" />
     <fragment
         android:id="@+id/appointment"
-        android:name="sv.edu.udb.dentalife.Appointment"
+        android:name="sv.edu.udb.dentalife.fragments.NewAppointmentFragment"
         android:label="fragment_appointment"
         tools:layout="@layout/fragment_appointment" />
     <fragment
         android:id="@+id/myAppointments"
-        android:name="sv.edu.udb.dentalife.MyAppointments"
+        android:name="sv.edu.udb.dentalife.fragments.MyAppointmentsFragment"
         android:label="fragment_my_appointments"
         tools:layout="@layout/fragment_my_appointments" />
 </navigation>

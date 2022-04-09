@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context=".Login">
+    tools:context=".activities.LoginActivity">
 
     <TextView
-        android:id="@+id/signin"
+        android:id="@+id/sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -22,7 +22,7 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signin"
+        android:layout_below="@+id/sign_in"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="50dp"
         android:background="#30ffffff"
@@ -50,7 +50,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/loginbtn"
+        android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
@@ -63,10 +63,10 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/logingooglebtn"
+        android:id="@+id/button_google_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/loginbtn"
+        android:layout_below="@+id/button_login"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/white"
@@ -79,10 +79,10 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/signupbtn"
+        android:id="@+id/button_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logingooglebtn"
+        android:layout_below="@+id/button_google_login"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/white"
@@ -93,8 +93,8 @@
         app:strokeWidth="1dp" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_below="@+id/signin"
+        android:id="@+id/dentist_progress_bar"
+        android:layout_below="@+id/sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone" />

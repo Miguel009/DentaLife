@@ -14,15 +14,15 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import sv.edu.udb.dentalife.R;
-import sv.edu.udb.dentalife.models.Dentist_Model;
+import sv.edu.udb.dentalife.models.DentistModel;
 
-public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHolder> {
+public class DentistAdapter extends RecyclerView.Adapter<DentistAdapter.ViewHolder> {
 
     private final int resource;
-    private final ArrayList<Dentist_Model> dentistsList;
+    private final ArrayList<DentistModel> dentists_list;
     private final OnDentistListener mOnDentistListener;
-    public Dentist_Adapter(ArrayList<Dentist_Model> dentistsList, int resource, OnDentistListener onDentistListener) {
-        this.dentistsList = dentistsList;
+    public DentistAdapter(ArrayList<DentistModel> dentists_list, int resource, OnDentistListener onDentistListener) {
+        this.dentists_list = dentists_list;
         this.resource = resource;
         this.mOnDentistListener = onDentistListener;
     }
@@ -36,29 +36,29 @@ public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Dentist_Model dentists = dentistsList.get(position);
+        DentistModel dentists = dentists_list.get(position);
         //Aqui agregamos nuevps campos
-        holder.tvName.setText(dentists.getName());
-        holder.tvSpecialty.setText(dentists.getId_specialty());
+        holder.tv_name.setText(dentists.getName());
+        holder.tv_specialty.setText(dentists.getId_specialty());
         //Para cargar las imagenes desde url
         Picasso.get()
                 .load(dentists.getImg()) //Cargamos recurso
                 .error(R.mipmap.ic_launcher_round) //Si da error mostramos otra imagen
-                .into(holder.vImg); //En donde mostraremos la img
+                .into(holder.v_img); //En donde mostraremos la img
     }
 
     @Override
     public int getItemCount() {
-        return dentistsList.size();
+        return dentists_list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         //Aqui declaramos los objetos de las vistas
 
-        private TextView tvName, tvSpecialty;
+        private TextView tv_name, tv_specialty;
 
-        private ImageView vImg;
+        private ImageView v_img;
 
         public View view;
 
@@ -67,9 +67,9 @@ public class Dentist_Adapter extends RecyclerView.Adapter<Dentist_Adapter.ViewHo
         public ViewHolder(View view, OnDentistListener onDentistListener) {
             super(view);
             this.view = view;
-            this.tvName = (TextView) view.findViewById(R.id.dent_name);
-            this.tvSpecialty = (TextView) view.findViewById(R.id.dent_specialty);
-            this.vImg = (ImageView) view.findViewById(R.id.dent_img);
+            this.tv_name = (TextView) view.findViewById(R.id.dent_name);
+            this.tv_specialty = (TextView) view.findViewById(R.id.dent_specialty);
+            this.v_img = (ImageView) view.findViewById(R.id.dent_img);
             this.onDentistListener=onDentistListener;
             view.setOnClickListener(this);
         }
