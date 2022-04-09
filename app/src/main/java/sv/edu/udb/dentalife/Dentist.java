@@ -1,36 +1,28 @@
 package sv.edu.udb.dentalife;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Logger;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 import sv.edu.udb.dentalife.adapters.Dentist_Adapter;
-import sv.edu.udb.dentalife.databinding.FragmentAppointmentBinding;
 import sv.edu.udb.dentalife.models.Dentist_Model;
 import sv.edu.udb.dentalife.models.Specialty_Model;
 
@@ -127,7 +119,7 @@ public class Dentist extends Fragment implements Dentist_Adapter.OnDentistListen
         bundle.putString("dentist_name", dentistList.get(position).getName());
         bundle.putString("dentist_speciality", dentistList.get(position).getId_specialty());
         bundle.putString("dentist_image", dentistList.get(position).getImg());
-        Fragment ap = new appointment();
+        Fragment ap = new Appointment();
         ap.setArguments(bundle);
         FragmentTransaction fr = requireActivity().getSupportFragmentManager().beginTransaction();
         fr.replace(R.id.fragment, ap).commit();

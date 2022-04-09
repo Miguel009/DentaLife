@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appointment">
+    tools:context=".Appointment">
 
     <TextView
         android:id="@+id/dentist_name"
@@ -42,32 +42,48 @@
         android:id="@+id/spinner_dates"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:padding="10dp"
-        android:layout_margin="30dp"
         android:layout_below="@id/dentist_speciality"
-        />
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:popupBackground="@color/purple_200" />
+
+    <Spinner
+        android:id="@+id/spinner_hours"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner_dates"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
-        android:padding="10dp"
         android:layout_height="240dp"
-        android:layout_below="@id/spinner_dates"
+        android:layout_below="@id/spinner_hours"
         android:layout_marginLeft="10dp"
-        android:background="@color/purple_200"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="10dp"
-        android:hint="@string/appointment_details"
+        android:background="@color/purple_200"
         android:gravity="top"
-        android:inputType="text|textMultiLine" />
+        android:hint="@string/appointment_details"
+        android:inputType="text|textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit_text"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="@string/ask_for_appointment" />
 </RelativeLayout>

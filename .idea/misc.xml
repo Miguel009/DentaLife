@@ -3,8 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_about_us.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_contact.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_dashboard.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_profile.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_appointment.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_blank.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_dentist.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_history.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_item.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_location.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/fragment_my_appointments.xml" value="0.25" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/view_appointments.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/layout/view_dentist.xml" value="0.1" />
+        <entry key="..\:/Users/GBC/Documentos/Programacion_Moviles/DentaLife/app/src/main/res/menu/bottom_menu.xml" value="0.14351851851851852" />
         <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/button_principal.xml" value="0.33" />
         <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/gradient_violet_principal.xml" value="0.2985" />
         <entry key="..\:/Users/megae/Desktop/Moviles/Proyecto de catedra/DentaLife/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.273" />

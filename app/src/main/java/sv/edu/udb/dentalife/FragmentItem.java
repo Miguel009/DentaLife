@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.lang.reflect.Array;
 import java.util.List;
 
@@ -57,6 +59,11 @@ public class FragmentItem extends Fragment implements AdapterView.OnItemClickLis
                 // Contacto
                 Intent contact = new Intent(getActivity(), Contact.class);
                 startActivity(contact);
+                break;
+            case 3:
+                FirebaseAuth fAuth = FirebaseAuth.getInstance();
+                fAuth.signOut();
+                startActivity(new Intent(getActivity(), Login.class));
                 break;
         }
     }

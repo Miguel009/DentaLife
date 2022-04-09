@@ -30,12 +30,12 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         binding = ActivityDashboardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new Location());
+        replaceFragment(new MyAppointments());
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId())
             {
                 case R.id.doctors:
-                    replaceFragment(new Dentist());
+                    replaceFragment(new MyAppointments());
                     break;
                 case R.id.history:
                     replaceFragment(new History());

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/contactUs">
+    app:startDestination="@id/myAppointments">
 
     <fragment
         android:id="@+id/contactUs"
@@ -22,7 +22,12 @@
         tools:layout="@layout/fragment_dentist" />
     <fragment
         android:id="@+id/appointment"
-        android:name="sv.edu.udb.dentalife.appointment"
+        android:name="sv.edu.udb.dentalife.Appointment"
         android:label="fragment_appointment"
         tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/myAppointments"
+        android:name="sv.edu.udb.dentalife.MyAppointments"
+        android:label="fragment_my_appointments"
+        tools:layout="@layout/fragment_my_appointments" />
 </navigation>
