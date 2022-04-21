@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_violet_principal"
+    tools:context=".activities.HomeActivity">
+
+    <View
+        android:id="@+id/view_logo_white"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/logo_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="379dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ptasans_italic"
+        android:text="Placeholder de texto random DentaLife xdxdxddxdxd"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_logo_white" />
+
+    <TextView
+        android:id="@+id/txt_login_home"
+        android:layout_width="170dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/ptasans_bold"
+        android:text="Iniciar sesión"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="379dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ptasans_italic"
+        android:text="¿Ya estás registrado?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_login_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_register_primary"
+        android:layout_width="379dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_principal"
+        android:fontFamily="@font/ptasans_bold"
+        android:letterSpacing="0"
+        android:shadowRadius="5"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@color/violet_light"
+        android:textSize="18dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/txt_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
