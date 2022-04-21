@@ -4,39 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
+    android:background="@color/white"
     tools:context=".fragments.DentistFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/dentist"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="25dp"
-            android:gravity="center"
-            android:text="@string/dentist_main_title"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <ProgressBar
-            android:id="@+id/dentist_progress_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
+            <View
+                android:id="@+id/view_logo_section"
+                android:layout_width="135dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/item_dentist"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/dentist"
-            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/dentist"
+                android:layout_width="387dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/ptasans_bold"
+                android:gravity="left"
+                android:text="@string/dentist_main_title"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/item_dentist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_logo_section"
+                app:layout_constraintVertical_bias="0.0" />
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <ProgressBar
+                android:id="@+id/dentist_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_dentist"
+                android:layout_width="385dp"
+                android:layout_height="415dp"
+                android:layout_below="@id/dentist"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="196dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                tools:layout_editor_absoluteX="205dp"
+                tools:layout_editor_absoluteY="496dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </RelativeLayout>
 </ScrollView>

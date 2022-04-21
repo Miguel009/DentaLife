@@ -12,12 +12,13 @@
         android:id="@+id/dent_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ptasans_bold"
         android:paddingLeft="100dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:text="@string/dent_name_hint"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/title_list"
         android:textSize="18dp"
         android:textStyle="bold" />
 
@@ -29,7 +30,8 @@
         android:paddingLeft="100dp"
         android:paddingRight="10dp"
         android:text="@string/dent_specialty_hint"
-        android:textColor="@color/purple_700" />
+        android:fontFamily="@font/ptasans_regular"
+        android:textColor="@color/subtitle_list" />
 
     <ImageView
         android:id="@+id/dent_img"
