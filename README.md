@@ -2,8 +2,8 @@
 DentaLife es una aplicación destinada a la administración sencilla de una clínica dental con el objetivo de poder llevar control de las citas realizadas, los pacientes recibidos y que exista una mayor comunicación entre especialista y paciente, pudiendo ahorrar tiempo al momento generar horarios o el repaso de citas anteriores.
 
 ## Para comenzar :milky_way:
-* [Manual de Usuario :boy:]()
-* [Manual Técnico :construction_worker:]()
+* [Manual de Usuario :boy:](https://udbedu-my.sharepoint.com/:b:/g/personal/mm180363_alumno_udb_edu_sv/ERCb-Xe3W-ZHvE14UEIepMYBZq6DF0DEQzDnrdT4BTaqIg?e=l14nW6)
+* [Manual Técnico :construction_worker:](https://udbedu-my.sharepoint.com/:b:/g/personal/mm180363_alumno_udb_edu_sv/EbblZ1UIqVdJkQMqZiMHNC4B59t2-s9VFAp4xOSObEUEBA?e=r2sfAx)
 * [Documento - Primera Fase :bookmark_tabs:](https://drive.google.com/file/d/1AN1iKLEkOhxEBdNTI-JnuVWxcM-3qo8_/view?usp=sharing)
 
 ## Requisitos :eyes:
