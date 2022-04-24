@@ -1,10 +1,12 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import sv.edu.udb.dentalife.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,13 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent login = new Intent(MainActivity.this, Login.class);
-                startActivity(login);
-                finish();
-            }
+        handler.postDelayed(() -> {
+            Intent login = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(login);
+            finish();
         }, 5000);
     }
 }

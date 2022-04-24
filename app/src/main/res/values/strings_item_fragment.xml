@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="menu_options">
+        <item>Configurar perfil</item>
+        <item>Acerca de DentaLife</item>
+        <item>Contactar con DentaLife</item>
+        <item>Cerrar sesión</item>
+    </string-array>
+</resources>

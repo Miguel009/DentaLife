@@ -1,14 +1,14 @@
 package sv.edu.udb.dentalife.models;
 
-public class Dentist_Model {
+public class DentistModel {
     private String id;
     private String name;
     private String id_specialty;
     private String img;
 
-    public Dentist_Model() {}
+    public DentistModel() {}
 
-    public Dentist_Model(String id, String name, String id_specialty, String img) {
+    public DentistModel(String id, String name, String id_specialty, String img) {
         this.id = id;
         this.name = name;
         this.id_specialty = id_specialty;

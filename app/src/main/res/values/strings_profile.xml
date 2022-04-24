@@ -1,0 +1,9 @@
+<resources>
+    <string name="profile_main_title">Configurar Usuario</string>
+    <string name="profile_button_text">Actualizar</string>
+    <string name="profile_first_name">Nombre</string>
+    <string name="profile_last_name">Apellido</string>
+    <string name="profile_email">Correo</string>
+    <string name="profile_phone">Telefono</string>
+    <string name="profile_address">Direccion</string>
+</resources>

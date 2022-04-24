@@ -9,32 +9,30 @@
     android:clickable="true">
 
     <TextView
-        android:id="@+id/dent_name"
+        android:id="@+id/appointment_dent_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ptasans_bold"
         android:paddingLeft="100dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:text="@string/dent_name_hint"
-        android:textColor="@color/title_list"
+        android:textColor="@color/purple_700"
         android:textSize="18dp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/dent_specialty"
+        android:id="@+id/appointment_dent_specialty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dent_name"
+        android:layout_below="@id/appointment_dent_name"
         android:paddingLeft="100dp"
         android:paddingRight="10dp"
         android:text="@string/dent_specialty_hint"
-        android:fontFamily="@font/ptasans_regular"
-        android:textColor="@color/subtitle_list" />
+        android:textColor="@color/purple_700" />
 
     <ImageView
-        android:id="@+id/dent_img"
+        android:id="@+id/appointment_dent_img"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="5dp"

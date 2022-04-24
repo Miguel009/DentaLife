@@ -8,86 +8,70 @@
     tools:context=".activities.LoginActivity">
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/register_main_title"
+        android:text="@string/profile_main_title"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/user_name"
+        android:id="@+id/profile_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/register"
+        android:layout_below="@+id/profile"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="50dp"
         android:background="#30ffffff"
         android:drawableStart="@drawable/ic_person_pin"
         android:drawablePadding="20dp"
-        android:hint="@string/register_first_name"
+        android:hint="@string/profile_first_name"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
     <EditText
-        android:id="@+id/user_last_name"
+        android:id="@+id/profile_last_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#30ffffff"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_below="@+id/user_name"
-        android:hint="@string/register_last_name"
+        android:layout_below="@+id/profile_name"
+        android:hint="@string/profile_last_name"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:padding="20dp"
         android:drawableStart="@drawable/ic_baseline_vpn_key_24"
         android:drawablePadding="20dp"
         />
-    <EditText
-        android:id="@+id/user_email"
+
+    <TextView
+        android:id="@+id/profile_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#30ffffff"
-        android:layout_marginTop="15dp"
+        android:layout_below="@+id/profile_last_name"
         android:layout_marginHorizontal="10dp"
-        android:layout_below="@+id/user_last_name"
-        android:hint="@string/register_email"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
-        android:padding="20dp"
-        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:layout_marginTop="15dp"
+        android:background="#30ffffff"
         android:drawablePadding="20dp"
-        android:inputType="textEmailAddress"
-        />
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#30ffffff"
-        android:layout_marginTop="15dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_below="@+id/user_email"
-        android:hint="@string/password_hint"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
+        android:hint="@string/profile_email"
+        android:inputType="none"
         android:padding="20dp"
-        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-        android:drawablePadding="20dp"
-        android:inputType="textPassword"
-        />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:drawableStartCompat="@drawable/ic_baseline_vpn_key_24" />
     <EditText
-        android:id="@+id/user_phone"
+        android:id="@+id/profile_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#30ffffff"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_below="@+id/password"
-        android:hint="@string/register_phone"
+        android:layout_below="@+id/profile_email"
+        android:hint="@string/profile_phone"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:padding="20dp"
@@ -96,14 +80,14 @@
         android:inputType="phone"
         />
     <EditText
-        android:id="@+id/user_address"
+        android:id="@+id/profile_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#30ffffff"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_below="@+id/user_phone"
-        android:hint="@string/register_address"
+        android:layout_below="@+id/profile_phone"
+        android:hint="@string/profile_address"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:padding="20dp"
@@ -112,13 +96,13 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/registerbtn"
+        android:id="@+id/button_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_address"
+        android:layout_below="@+id/profile_address"
         android:layout_marginHorizontal="10dp"
         android:backgroundTint="@color/purple_700"
-        android:text="@string/register_button_text"
+        android:text="@string/profile_button_text"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
         />
@@ -127,7 +111,7 @@
         android:id="@+id/button_cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/registerbtn"
+        android:layout_below="@+id/button_update"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="10dp"
         android:backgroundTint="@color/white"
@@ -139,9 +123,10 @@
         />
 
     <ProgressBar
-        android:id="@+id/register_progress_bar"
-        android:layout_below="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
+        android:id="@+id/profile_progress_bar"
+        android:layout_width="90dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="-15dp"
+        android:visibility="visible" />
 </RelativeLayout>

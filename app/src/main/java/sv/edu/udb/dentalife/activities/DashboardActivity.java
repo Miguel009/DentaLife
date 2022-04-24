@@ -1,4 +1,4 @@
-package sv.edu.udb.dentalife;
+package sv.edu.udb.dentalife.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,9 +7,14 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import sv.edu.udb.dentalife.R;
 import sv.edu.udb.dentalife.databinding.ActivityDashboardBinding;
+import sv.edu.udb.dentalife.fragments.DentistFragment;
+import sv.edu.udb.dentalife.fragments.ItemFragment;
+import sv.edu.udb.dentalife.fragments.MessagesFragment;
+import sv.edu.udb.dentalife.fragments.MyAppointmentsFragment;
 
-public class Dashboard extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     ActivityDashboardBinding binding;
 
@@ -19,19 +24,21 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         binding = ActivityDashboardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new Location());
-
+        replaceFragment(new MyAppointmentsFragment());
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId())
             {
-                case R.id.location:
-                    replaceFragment(new Location());
+                case R.id.history:
+                    replaceFragment(new MyAppointmentsFragment());
                     break;
-                case R.id.dentist:
-                    replaceFragment(new Dentist());
+                case R.id.dentists:
+                    replaceFragment(new DentistFragment());
                     break;
-                case R.id.contactUs:
-                    replaceFragment(new ContactUs());
+                case R.id.messages:
+                    replaceFragment(new MessagesFragment());
+                    break;
+                case R.id.profile:
+                    replaceFragment(new ItemFragment());
                     break;
             }
             return true;

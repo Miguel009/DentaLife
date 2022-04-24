@@ -1,0 +1,4 @@
+<resources>
+    <string name="ask_for_appointment">Solicitar cita</string>
+    <string name="appointment_details">Detalles de la cita</string>
+</resources>
