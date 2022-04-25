@@ -5,7 +5,7 @@ DentaLife es una aplicación destinada a la administración sencilla de una clí
 * [Manual de Usuario :boy:](https://udbedu-my.sharepoint.com/:b:/g/personal/mm180363_alumno_udb_edu_sv/ERCb-Xe3W-ZHvE14UEIepMYBZq6DF0DEQzDnrdT4BTaqIg?e=l14nW6)
 * [Manual Técnico :construction_worker:](https://udbedu-my.sharepoint.com/:b:/g/personal/mm180363_alumno_udb_edu_sv/EbblZ1UIqVdJkQMqZiMHNC4B59t2-s9VFAp4xOSObEUEBA?e=r2sfAx)
 * [Documento - Primera Fase :bookmark_tabs:](https://drive.google.com/file/d/1AN1iKLEkOhxEBdNTI-JnuVWxcM-3qo8_/view?usp=sharing)
-* [Video de Demostración - Segunda Fase :movie camera:](https://drive.google.com/file/d/1j3FTKdS83C7Kn_U2LfMZKvO8MTzWwZqJ/view?usp=sharing)
+* [Video de Demostración - Segunda Fase 🎥](https://drive.google.com/file/d/1j3FTKdS83C7Kn_U2LfMZKvO8MTzWwZqJ/view?usp=sharing)
 
 ## Requisitos :eyes:
 ```
