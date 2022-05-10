@@ -1,4 +1,6 @@
 <resources>
     <string name="contact_main_title">Contactanos</string>
-    <string name="contact_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae porttitor dolor. Sed vel diam quis metus ornare vulputate. Ut eget fringilla sapien</string>
+    <string name="contact_description">Queremos que sea fácil resolver tus inquietudes, sugerencias y necesidades para hacer que tu experiencia sea siempre la mejor. Puede contactarnos por:</string>
+    <string name="contact_email"> Mail: support@dentalife.com</string>
+    <string name="contact_phone">Telefono/Whatsapp: 77884688</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_description">Bienvenidos a dentalife, Esperamos que disfrutes la experiencia de la APP</string>
+    <string name="home_question">¿Ya estás registrado?</string>
+    <string name="home_sign_in">Iniciar sesión</string>
+</resources>

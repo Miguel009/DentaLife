@@ -58,7 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-
+                        Toast.makeText(getApplicationContext(), "Error"+error.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
         );
@@ -73,10 +73,19 @@ public class ProfileActivity extends AppCompatActivity {
         lastName = et_last_name.getText().toString();
         phone = et_phone.getText().toString();
         address = et_address.getText().toString();
-        database_reference.child(firebase_auth.getCurrentUser().getUid()).setValue(new UserModel(firstName, lastName, email, phone, address));
-        profile_progress_bar.setVisibility(View.GONE);
-        Toast.makeText(getApplicationContext(), "Informacion Actualizada!", Toast.LENGTH_LONG).show();
-        finish();
+        if (email.isEmpty() && firstName.isEmpty() && lastName.isEmpty() && phone.isEmpty() && address.isEmpty())
+        {
+            profile_progress_bar.setVisibility(View.GONE);
+            Toast.makeText(getApplicationContext(), "Debe llenar todos los campos", Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            database_reference.child(firebase_auth.getCurrentUser().getUid()).setValue(new UserModel(firstName, lastName, email, phone, address));
+            profile_progress_bar.setVisibility(View.GONE);
+            Toast.makeText(getApplicationContext(), "Informacion Actualizada!", Toast.LENGTH_LONG).show();
+            finish();
+        }
+
     }
 
     private void initializeUI() {

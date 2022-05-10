@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -28,6 +29,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import sv.edu.udb.dentalife.R;
+import sv.edu.udb.dentalife.activities.ContactActivity;
 import sv.edu.udb.dentalife.models.NewAppointmentModel;
 
 public class NewAppointmentFragment extends Fragment {
@@ -146,9 +148,16 @@ public class NewAppointmentFragment extends Fragment {
         String day = spinner_dates.getSelectedItem().toString();
         String hour = spinner_hours.getSelectedItem().toString();
 
-        database_reference = FirebaseDatabase.getInstance().getReference();
-        database_reference.child("appointments/" + firebase_auth.getCurrentUser().getUid()).push().setValue(new NewAppointmentModel(day, hour, comment, dentist_id));
-        goToMyAppointmentsFragment();
+        if (!comment.trim().isEmpty() && !day.trim().isEmpty() && !hour.trim().isEmpty())
+        {
+            database_reference = FirebaseDatabase.getInstance().getReference();
+            database_reference.child("appointments/" + firebase_auth.getCurrentUser().getUid()).push().setValue(new NewAppointmentModel(day, hour, comment, dentist_id));
+            goToMyAppointmentsFragment();
+        }
+        else{
+            Toast.makeText(getContext(), "Debe llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private void initializeUI(View view) {

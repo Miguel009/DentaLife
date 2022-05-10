@@ -56,8 +56,9 @@ dependencies {
         // Declare the dependency for the Firebase Authentication library
         // When using the BoM, you don't specify versions in Firebase library dependencies
         implementation 'com.google.firebase:firebase-auth'
-
+        implementation 'com.google.android.gms:play-services-maps:18.0.2'
         // Also declare the dependency for the Google Play services library and specify its version
         implementation 'com.google.android.gms:play-services-auth:20.1.0'
+        implementation 'com.karumi:dexter:6.2.2'
     }
 }

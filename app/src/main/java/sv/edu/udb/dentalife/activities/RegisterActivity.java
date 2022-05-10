@@ -55,25 +55,32 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Porfavor ingresa la contraseña!", Toast.LENGTH_LONG).show();
             return;
         }
+        if (!firstName.isEmpty() && !lastName.isEmpty() && !phone.isEmpty() && !address.isEmpty())
+        {
+            firebase_auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            DatabaseReference dataRef;
+                            dataRef = FirebaseDatabase.getInstance().getReference("users");
+                            dataRef.child(firebase_auth.getCurrentUser().getUid()).setValue(new UserModel(firstName, lastName, email, phone, address));
+                            Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_LONG).show();
+                            register_progress_bar.setVisibility(View.GONE);
 
-        firebase_auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        DatabaseReference dataRef;
-                        dataRef = FirebaseDatabase.getInstance().getReference("users");
-                        dataRef.child(firebase_auth.getCurrentUser().getUid()).setValue(new UserModel(firstName, lastName, email, phone, address));
-                        Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_LONG).show();
-                        register_progress_bar.setVisibility(View.GONE);
+                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                        }
+                        else {
+                            Toast.makeText(getApplicationContext(), "Registro fallido", Toast.LENGTH_LONG).show();
+                            register_progress_bar.setVisibility(View.GONE);
+                        }
+                    });
+        }
+        else
+        {
+            Toast.makeText(RegisterActivity.this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
 
-                        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                    }
-                    else {
-                        Toast.makeText(getApplicationContext(), "Registro fallido", Toast.LENGTH_LONG).show();
-                        register_progress_bar.setVisibility(View.GONE);
-                    }
-                });
-    }
+        }
     private void initializeUI() {
         et_email = findViewById(R.id.user_email);
         et_password = findViewById(R.id.password);

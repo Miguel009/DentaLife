@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         handler.postDelayed(() -> {
-            Intent login = new Intent(MainActivity.this, LoginActivity.class);
+            Intent login = new Intent(MainActivity.this, HomeActivity.class);
             startActivity(login);
             finish();
-        }, 5000);
+        }, 2000);
     }
 }

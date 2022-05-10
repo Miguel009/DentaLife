@@ -23,8 +23,8 @@
     <TextView
         android:id="@+id/description_section_1"
         android:layout_width="362dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/contact_description"
         android:textColor="@color/inactive"
         android:textSize="18dp"
@@ -33,6 +33,34 @@
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbl_section" />
+    <TextView
+        android:id="@+id/description_section_2"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/contact_email"
+        android:textColor="@color/inactive"
+        android:textSize="18dp"
+        android:fontFamily="@font/ptasans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_section_1"
+        app:drawableStartCompat="@drawable/ic_baseline_email_24" />
+    <TextView
+        android:id="@+id/description_section_3"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/contact_phone"
+        android:textColor="@color/inactive"
+        android:textSize="18dp"
+        android:fontFamily="@font/ptasans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableStartCompat="@drawable/ic_baseline_phone_android_24"
+        app:layout_constraintTop_toBottomOf="@+id/description_section_2" />
 
 
     <Button
@@ -80,12 +108,13 @@
     <com.google.android.gms.maps.MapView
         android:id="@+id/map_view_contact"
         android:layout_width="362dp"
-        android:layout_height="280dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button_close_option"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_section_1"
+        app:layout_constraintTop_toBottomOf="@+id/description_section_3"
         app:layout_constraintVertical_bias="0.326" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
