@@ -10,7 +10,7 @@ DentaLife es una aplicación destinada a la administración sencilla de una clí
 ## Requisitos :eyes:
 ```
 Dispositivo celular con acceso a internet
-Sistema Operativo Android *Ingrese versión*
+Sistema Operativo Android Oreo
 ```
 
 ## Desarrolladores (G-02T) :busts_in_silhouette:
